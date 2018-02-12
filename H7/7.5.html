@@ -1,0 +1,13 @@
+ <input type="radio" name="sex" onclick="fungsiKu1(this.value)" value="Pria"> Pria
+ <input type ="radio" name="sex" onclick = "fungsiKu1(this.value)" value="Wanita"> Wanita
+ <button id="klikini" onclick="fungsiKu2(this.value)"> klik
+ </button>
+ <p id="output"></p>
+
+ <script>
+ function fungsiKu1(x) {document.getElementById("klikini").value = x}
+ function fungsiKu2(y) {document.getElementById("output").innerHTML=y}
+ </script>
+
+ //jika ingin membuat buttonnya bisa diklik dua-duanya, name di inout di ganti dari sex -> sex1, sex2
+ //jika jawaban pada hasil klik button ingin berubah, valu input pria yg terletak diluar kurung (>pria) yang mesti di ganti

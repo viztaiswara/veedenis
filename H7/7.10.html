@@ -1,0 +1,18 @@
+<form id = "form"> 
+    Masukkan angka 1: <input type = "number"> 
+    <br> <br>
+    Masukkan angka 2: <input type = "number">
+</form>
+
+<button onclick="fungsiKu()">Pangkatkan!</button>
+
+<p id = "jawaban">Hasil</p>
+
+<script>
+     function fungsiKu() {
+        var x = document.getElementById("form").elements [0].value;
+        var y = document.getElementById("form").elements [1].value;
+        var z = Math.pow(x,y)
+        document.getElementById("jawaban").innerHTML = 'Hasil ' +x+ '<sup>' +y+ '</sup> = '+z  
+    }
+</script>

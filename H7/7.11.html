@@ -1,0 +1,20 @@
+<form id = 'type'>
+    Ketik kalimat: <input type = "text1"> <br><br>
+    karakter yang dicari: <input type = "text2">
+</form>
+
+<button onclick= "fungsiKu()">Cari!
+</button>
+
+<p id = "jawaban"> Jumlah </p>
+
+<script>
+    function fungsiKu() {
+        var a =  document.getElementById("type").elements [0]. value;
+        var b = document.getElementById("type").elements [1]. value;
+        var c = new RegExp(b, 'g')
+        var d = a.replace( c, '')
+        var e = a.length - d.length
+        document.getElementById("jawaban").innerHTML = '<b>Jumlah \'' +b+ '\'sebanyak ' +e+ 'buah</b>'; 
+    }
+</script>

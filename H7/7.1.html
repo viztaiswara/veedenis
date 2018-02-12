@@ -1,0 +1,13 @@
+<form id = "form">
+    nama:<input type="text">
+    <br>
+</form>
+<button onclick="fungsiKu()"> coba klik!</button>
+<p id="tes"> hasil</p>
+
+<script>
+    function fungsiKu() {
+        let input1= document.getElementById("form").elements[0].value;
+        document.getElementById("tes").innerHTML=input1;
+    }
+</script>

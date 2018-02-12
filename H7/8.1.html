@@ -1,0 +1,84 @@
+<b>1. Siapakah Presiden ketiga Republik Indonesia?</b> <br><br>
+<input type= "radio" name = "a"
+onclick = "fungsiKu1(this.value)" value="Prof.B.J.Habibie">Prof.B.J.Habibie
+<input type= "radio" name = "b"
+onclick = "fungsiKu1(this.value)" value="Abdurrahman Wahid">Abdurrahman Wahid
+<input type= "radio" name = "c"
+onclick = "fungsiKu1(this.value)" value="Ir.Soekarno">Ir.Soekarno
+<input type= "radio" name = "d"
+onclick = "fungsiKu1(this.value)" value="Joko Widodo">Joko Widodo
+<br><br>
+
+<b>2. Berikut adalah nama-nama bahasa programan keciali ...</b> <br><br>
+<input type= "radio" name = "b"
+onclick = "fungsiKu2(this.value)" value="Python">Python
+<input type= "radio" name = "b"
+onclick = "fungsiKu2(this.value)" value="Micro;bit">Micro;bit
+<input type= "radio" name = "b"
+onclick = "fungsiKu2(this.value)" value="JavaScript">JavaScript
+<input type= "radio" name = "b"
+onclick = "fungsiKu2(this.value)" value="HTML">HTML
+<br><br>
+
+<b>3. Apa judul lagu yang diduga dilagiat oleh lagu 'Sayang' Via Vallen?</b> <br><br>
+<input type= "radio" name = "c"
+onclick = "fungsiKu3(this.value)" value="Qang Fei De Yi">Qang Fei De Yi
+<input type= "radio" name = "c"
+onclick = "fungsiKu3(this.value)" value="Ting Hai">Ting Hai
+<input type= "radio" name = "c"
+onclick = "fungsiKu3(this.value)" value="Mirai E Kiroro">Mirai E Kiroro
+<input type= "radio" name = "c"
+onclick = "fungsiKu3(this.value)" value="Hau Siang Hau Siang">Hau Siang Hau Siang
+<br><br>
+
+
+<b>4.Siapakah sosok di balik topeng Batman?</b> <br><br>
+<input type= "radio" name = "d"
+onclick = "fungsiKu4(this.value)" value="Natasha Romanov">Natasha Romanov
+<input type= "radio" name = "d"
+onclick = "fungsiKu4(this.value)" value="Peter Parker">Peter Parker
+<input type= "radio" name = "d"
+onclick = "fungsiKu4(this.value)" value="Tony Stark">tony stark
+<input type= "radio" name = "d"
+onclick = "fungsiKu4(this.value)" value="Bruce Wayne">Bruce Wayne
+<br><br>
+
+<button id="submit" onclick="fungsiKu5(this.value)">Submit
+    </button>
+
+<p id = "hasil"></p>
+<p id = "hasil2"></p>
+<p id = "hasil3"></p>
+<p id = "hasil4"></p>
+
+<script>
+    function pres (x) {
+        document.getElementById("soal")
+    }
+
+
+
+
+
+function fungsiKu1() {
+    if (document.getElementById("a").checked == true && document.getElementById ("b") == false && 
+    document.getElementById ("c") == false && document.getElementById ("d") == false  ) {
+     document.getElementById("hasil").innerHTML = "25"}
+
+ else if (document.getElementById("b").checked == false && document.getElementById ("a") == false && 
+    document.getElementById ("c") == false && document.getElementById ("d") == false  ) {
+     document.getElementById("hasil").innerHTML = "0"}
+
+ 
+ else if (document.getElementById("c").checked == false && document.getElementById ("a") == false && 
+    document.getElementById ("b") == false && document.getElementById ("d") == false  ) {
+     document.getElementById("hasil").innerHTML = "0"}
+
+ 
+     else if (document.getElementById("d").checked == false && document.getElementById ("a") == false && 
+    document.getElementById ("b") == false && document.getElementById ("c") == false  ) {
+     document.getElementById("hasil").innerHTML = "0"    }
+    
+     else {document.getElementById("klikini").value = ''} } 
+}
+</script>
